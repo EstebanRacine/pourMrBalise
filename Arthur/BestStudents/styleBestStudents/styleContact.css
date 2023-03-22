@@ -1,0 +1,97 @@
+
+
+.containContact{
+    grid-area: contain;
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+}
+.informations > a {
+    color: black;
+}
+.planning{
+    grid-column: 1/3;
+}
+.informations > img {
+    width: 250px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    border-radius: 5px;
+}
+h1{
+    grid-column: 1/3;
+    justify-self: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+iframe{
+    min-width: 250px;
+    width: 100%;
+    height: 100%;
+}
+.informations{
+    padding: 10px 20px;
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 280px 1fr;
+}
+.carte{
+    grid-area: 1/2/8/3;
+}
+.informations p:nth-of-type(odd),.informations p:last-of-type{
+    font-weight: bold;
+    text-decoration: underline;
+}
+th{
+    height: 40px;
+}
+th{
+    text-align: center;
+}
+.indisponnible{
+    font-weight: bold;
+    text-align: center;
+    grid-column: 1/3;
+}
+.formulaireContact > .formulaire{
+    width: 100%;
+}
+.formulaireContact > .formulaire > input{
+    height: 20px;
+}
+textarea{
+    display: block;
+    height: 150px;
+    width: 100%;
+    border: 1px solid lightsteelblue;
+    resize: vertical;
+}
+.formulaireContact > .formulaire > input[type=submit]{
+    height: unset;
+}
+.planning{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+.horaire{
+    text-align: center;
+}
+.horaire > p:first-child{
+    font-weight: bold;
+}
+.horaire > p{
+    margin-bottom: 10px;
+}
+.containContact > span{
+    grid-column: 1/3;
+    text-align: center;
+    font-size: 1.4em;
+}
+@media  screen and (max-width: 900px){
+    .informations{
+        grid-column: 1/3;
+    }
+
+    .formulaireContact{
+        grid-column: 1/3;
+    }
+}

@@ -1,0 +1,36 @@
+.lines{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50px repeat(7,minmax(50px,1fr));
+    border-bottom: 1px solid black;
+    grid-auto-rows: 40px;
+    padding: 10px 0;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.lines > p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.lines:nth-last-child(1){
+border: none;
+}
+.lines > a {
+    color: black;
+}
+.tableau{
+    display: grid;
+}
+.containDemande{
+    margin-top: 30px;
+ }
+
+.enSavoirPlus input[type = "submit"]{
+    all: unset;
+    cursor: pointer;
+    background: #f9ede9;
+    border-radius: 3px;
+    padding: 8px;
+}
